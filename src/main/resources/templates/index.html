@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+</head>
+<body>
+
+<!--
+we use the syntax with ::
+left side of the :: is the file where the fragment is written (.html extension is not needed)
+right side of the :: the name of the fragment itself -->
+<div th:replace ="fragments/navigation :: top"></div>
+
+<!--
+with "replace" you also replace the tag with the one of the fragment,
+ with "include" with put the fragment inside the actual tag-->
+
+<div>
+    <p>Welcome to the home page!</p>
+</div>
+</body>
+</html>
